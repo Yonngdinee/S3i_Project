@@ -1,0 +1,223 @@
+@charset "EUC-KR";
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background:#E8F5FF;
+}
+/* a태그 밑줄 없애기 */
+a{ 
+	text-decoration : none;
+	color : black;
+}
+/* 상단 부분 ~ 검색어 부분까지 배경 설정 */
+header{ 
+	background-image: url(./keyboard.jpg);
+	background-size : 100%;
+}
+/*Tittle 내용*/
+.title_main {
+	margin: 0;
+	padding: 9rem 0 5rem 0;
+	width: 100%;
+	height: 4rem;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: bold;
+	color: black;
+	width: 100%;
+	text-decoration-line: none;
+}
+/*검색 바*/
+.search {
+	height: 9rem;
+	width: 100%;
+}
+.searchBlock {
+	/*마진 : 위 오 아래 왼 , 패딩 : 오 왼 위 아래*/
+	margin: -1rem 14rem 0rem 14rem;
+	border: 2px solid;
+	border-color: white;
+	border-radius: 30px;
+	width: 100;
+	height: 3rem;
+	box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.112);
+	border: 2px solid;
+	background-color: white;
+}
+.searchBlock ::placeholder {
+	color: gray;
+}
+.searchBlock:hover {
+	scale: 102.5%;
+	transition: all 0.4s; /*0.4초동안 애니메이션 효과*/
+}
+
+.searchBlock input {
+	color: black;
+}
+#searchVal {
+	margin: 0.25rem 0 0.25rem 1.5rem;
+	width: 70%;
+	height: 2.5rem;
+	border: 0;
+	background-color: rgba(255, 255, 255, 0);
+	float: left;
+}
+
+#searchVal:focus {
+	outline: none;
+}
+#btnSearch {
+	margin: 0.85rem 1rem 1rem 0;
+	width: 1.2rem;
+	float: right;
+}
+/* 라디오 값 정렬 부분 */
+#sortbu {
+	font-weight: bold;
+	padding: 0.5rem 8rem 0.5rem 0;
+	background: #93C6E7;
+	color:white;
+	text-align : right;
+	
+}
+/* 총 몇건 총 몇페이지 부분 */
+#page-information{
+	margin:	 1rem 10rem 0 10rem; 
+	padding: 1rem 1rem 0  0;
+	color : gray; 
+	text-align:right;
+
+}
+/* 라디오 부분 중 적용 버튼 부분 */
+#apply {
+	background-color:black;
+	color: white;
+	cursor: pointer;
+}
+#excel {
+  background-color:black;
+  color: white;
+  cursor: pointer;
+  float:left;
+  margin-left:10rem;
+}
+
+/*Main 내용*/
+.jb-text1 {
+	padding: 15px 24px;
+	margin: 0 10rem 0 10rem;
+	background: #DFDFDE;
+	border-radius: 5px;
+	color: black;
+	display: none;
+	width : 81%;
+	position: absolute;  
+}
+
+.jb-id:hover {
+	color: orange;
+}
+
+.jb-id:hover+.jb-text1 {
+	display: block;
+}
+
+.jb-id {
+	font-size: 2rem;
+	margin: -1rem 10rem 3rem 10rem;
+	background-color: white;
+	border: 1px solid black;
+}
+
+#id {
+	/*그림자 위치, x거리, y거리, 블러, 크기, 색상*/
+	box-shadow: inset 0 -15px 0 0 #ffff00;
+	width: fit-content;
+}
+
+.jb-des {
+	margin: 0 5rem 0 0;
+	padding: 15px 20px;
+	font-size: 1rem;
+	color: #505050;
+	padding: 15px 20px;
+	font-weight: bolder;
+}
+
+#jb-desKR {
+	font-size: 15px;
+}
+
+#p-date {
+	font-size: 12px;
+	float: left;
+}
+
+#u-date {
+	font-size: 12px;
+}
+
+.wrapper {
+	margin: 0 auto;
+	padding: 30px;
+	max-width: 1170px;
+}
+
+#score {
+	display: flex;
+	text-align: center;
+	height: 70px;
+}
+
+h2 {
+	font-size: 15px;
+}
+
+h3 {
+	width: 150px;
+	height: 50px;
+	line-height: 15px;
+	text-align: center;
+}
+/* meter 크기 설정 */
+meter {
+	width: 200px;
+	height: 50px;
+}
+/* meter 테두리, 모서리 둥글기, 배경색 설정 */
+meter::-webkit-meter-bar {
+	max-width: 200px;
+	height: 25px;
+	border-radius: 7px;
+	border: 2px solid #aaa;
+	background-color: #eee;
+}
+
+/* meter 최적값에서 많이 부족한 색상 설정 */
+meter::-webkit-meter-even-less-good-value {
+	background-color: red;
+}
+
+/* meter 최적값에 근접한 색상 설정 */
+meter::-webkit-meter-suboptimum-value {
+	background-color: #f7570b;
+}
+
+/* meter 최적값 색상 설정 */
+meter::-webkit-meter-optimum-value {
+	background-color: #1e7e17;
+}
+/* 페이징 부분 */
+.paging{
+	margin: 5rem 10rem 5rem 10rem;
+	text-align: center;
+}
+/* 하단부 부분 */
+footer{
+	height : 10rem;
+	background-color : #333;
+}
